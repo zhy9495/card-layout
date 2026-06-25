@@ -89,15 +89,15 @@ Each style is shown in both **Chinese (Xiaohongshu)** and **English** — the En
 
 | Style | 中文 / Chinese | English |
 |:--|:--:|:--:|
-| **warm-editorial** | <img src="skills/card-layout/styles/warm-editorial/sample-cover.png" width="300"> | <img src="skills/card-layout/styles/warm-editorial/sample-en.png" width="300"> |
-| **swiss-grid** | <img src="skills/card-layout/styles/swiss-grid/sample.png" width="300"> | <img src="skills/card-layout/styles/swiss-grid/sample-en.png" width="300"> |
-| **vintage-collage** | <img src="skills/card-layout/styles/vintage-collage/sample-hook.png" width="300"> | <img src="skills/card-layout/styles/vintage-collage/sample-en.png" width="300"> |
-| **bauhaus** | <img src="skills/card-layout/styles/bauhaus/sample.png" width="300"> | <img src="skills/card-layout/styles/bauhaus/sample-en.png" width="300"> |
-| **neo-brutalism** | <img src="skills/card-layout/styles/neo-brutalism/sample.png" width="300"> | <img src="skills/card-layout/styles/neo-brutalism/sample-en.png" width="300"> |
-| **minimal-quiet** | <img src="skills/card-layout/styles/minimal-quiet/sample.png" width="300"> | <img src="skills/card-layout/styles/minimal-quiet/sample-en.png" width="300"> |
-| **bold-poster** | <img src="skills/card-layout/styles/bold-poster/sample.png" width="300"> | <img src="skills/card-layout/styles/bold-poster/sample-en.png" width="300"> |
-| **memphis** | <img src="skills/card-layout/styles/memphis/sample.png" width="300"> | <img src="skills/card-layout/styles/memphis/sample-en.png" width="300"> |
-| **typewriter-memo** | <img src="skills/card-layout/styles/typewriter-memo/sample.png" width="300"> | <img src="skills/card-layout/styles/typewriter-memo/sample-en.png" width="300"> |
+| **warm-editorial** | <img src="skills/card-layout/styles/warm-editorial/sample-cover.png?v=2" width="300"> | <img src="skills/card-layout/styles/warm-editorial/sample-en.png?v=2" width="300"> |
+| **swiss-grid** | <img src="skills/card-layout/styles/swiss-grid/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/swiss-grid/sample-en.png?v=2" width="300"> |
+| **vintage-collage** | <img src="skills/card-layout/styles/vintage-collage/sample-hook.png?v=2" width="300"> | <img src="skills/card-layout/styles/vintage-collage/sample-en.png?v=2" width="300"> |
+| **bauhaus** | <img src="skills/card-layout/styles/bauhaus/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/bauhaus/sample-en.png?v=2" width="300"> |
+| **neo-brutalism** | <img src="skills/card-layout/styles/neo-brutalism/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/neo-brutalism/sample-en.png?v=2" width="300"> |
+| **minimal-quiet** | <img src="skills/card-layout/styles/minimal-quiet/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/minimal-quiet/sample-en.png?v=2" width="300"> |
+| **bold-poster** | <img src="skills/card-layout/styles/bold-poster/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/bold-poster/sample-en.png?v=2" width="300"> |
+| **memphis** | <img src="skills/card-layout/styles/memphis/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/memphis/sample-en.png?v=2" width="300"> |
+| **typewriter-memo** | <img src="skills/card-layout/styles/typewriter-memo/sample.png?v=2" width="300"> | <img src="skills/card-layout/styles/typewriter-memo/sample-en.png?v=2" width="300"> |
 
 ## Sizes & Platforms
 
