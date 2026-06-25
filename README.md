@@ -1,70 +1,131 @@
-# Card Layout · 小红书图文卡片排版器
+# Card Layout
 
-一个给 coding agent 用的 skill:把**已经写好的文字(+可选图片)**,排成小红书 / 公众号的 **3:4 图片连发**(1080×1440)。打包成 Claude Code 插件。
+A coding-agent skill that turns **already-written copy (plus optional images)** into ready-to-post **3:4 / 4:5 / 1:1 image carousels** for Xiaohongshu (RED), Instagram, and WeChat. Packaged as a Claude Code plugin; the core `SKILL.md` also works for any agent with filesystem + shell access.
 
-> 不写文案,只排版出图——你把文字和图丢进来,它读懂、切卡、自动配图、给你看图选风格、渲染成一整套可直接发的卡片。
+> It doesn't write your copy — it lays it out. Drop in your text and images; it reads them, splits them into cards, auto-pairs the images, lets you pick a style by looking, and renders a full, on-brand set.
 
-## 它解决什么
+## What This Does
 
-用「**show, don't tell**」:不让你用语言描述想要什么风格,而是**读懂内容 → 切好卡 → 给你真样张看图选**。三件它替你做的事:
+Card Layout uses a **"show, don't tell"** approach: instead of asking you to describe a look in words, it **reads your content, plans the cards, and shows you real sample covers to choose from**. Three things it does for you:
 
-1. **读稿切卡** — 逐段判断最适合哪种模块(封面/正文/概念/数据/对比/步骤/金句/清单/封底/图文)。
-2. **自动配图** — 你只管把图丢进来,它**看图 + 读稿自动配到对应段落**,零标注。
-3. **看图选风格** — 从 10 套内置风格按内容筛出合适的,渲样张给你挑。
+1. **Read & split** — reads the whole piece and decides the best module for each段/section (cover, body, concept, data, compare, steps, quote, list, closing, image).
+2. **Auto-pair images** — just drop your images in; it looks at each image, reads the copy, and places each one next to the段 it belongs to. No tagging required.
+3. **Pick a style by eye** — it filters the 9 built-in styles by your content, then renders 2–3 sample covers for you to choose.
 
-## 安装
+## Key Features
 
-从本 GitHub 仓库装。**分两条消息发**:
+- **Zero runtime deps** — each card is one self-contained HTML (inline CSS), rendered to PNG via headless Chrome.
+- **Pick-by-preview** — can't describe a look? Don't. Choose from rendered samples.
+- **9 cohesive styles × multi-module** — every style covers all content modules + 4 image layouts, with a tight, consistent visual system.
+- **Anti-AI-slop** — each style is anchored to a real design tradition (Swiss, Bauhaus, neo-brutalism, vintage-engraving, Memphis…), not generic AI looks.
+- **CN + EN** — works for Chinese, English, or bilingual copy (each style ships Latin + CJK font stacks).
+- **Multi-platform sizes** — Xiaohongshu 3:4, Instagram carousel 4:5 (recommended) and 1:1.
+- **Extensible** — add a new style by copying one folder.
+
+## Installation
+
+### Via Claude Code custom marketplace (recommended)
+
+Install straight from this repo. Run these as **two separate messages**:
 
 ```text
 /plugin marketplace add https://github.com/zhy9495/card-layout
 ```
 
-完成后:
+Then:
 
 ```text
 /plugin install card-layout@card-layout
 ```
 
-然后输入 `/card-layout:card-layout` 调用,把文字贴进来、图片一起丢进来即可。
+Use it by typing `/card-layout:card-layout`, then paste your copy and drop your images.
 
-> 手动安装:`git clone` 本仓库后,把 `skills/card-layout/` 整个放进你的 `~/.claude/skills/`。
+### Manual install
 
-## 10 套内置风格
+```text
+git clone https://github.com/zhy9495/card-layout.git
+```
 
-| 风格 | 母题 | 调性 | 适合 |
+Copy `skills/card-layout/` into your `~/.claude/skills/` directory, then use `/card-layout`.
+
+### Other agents
+
+Send the agent this repo link and ask it to use the Card Layout skill. It should start from `skills/card-layout/SKILL.md`, then load `styles/index.json`, the chosen style's `design.md`, and `scripts/` on demand. Requires macOS + Chrome to render.
+
+## Usage
+
+```text
+/card-layout:card-layout
+
+> "Turn this article into a Xiaohongshu carousel" (paste the text, drop the images)
+```
+
+The skill will:
+1. Read the piece — core point, hook, page rhythm.
+2. Plan the cards — module per section + auto-paired images — and show a numbered plan to confirm.
+3. Filter styles from `styles/index.json` and render 2–3 sample covers to pick from.
+4. Ask for account name (optional; left blank if none) and target size, then render each card to PNG.
+5. Self-review the contact sheet (overflow / alignment) → ask where to save → archive.
+
+## Included Styles (9)
+
+| Style | Motif | Mood | Best for |
 |---|---|---|---|
-| 暖纸编辑 warm-editorial | 杂志衬线 | 暖·克制·留白 | 情感/生活/方法论 |
-| 瑞士网格 swiss-grid | 国际主义 | 理性·专业 | 英语/知识/职场 |
-| 版画长文 vintage-collage | 复古拼贴 | 安静·艺术 | 心理/情感长文 |
-| 彩色文件夹 folder-doodle | 桌面拟物 | 俏皮·热闹 | 分类/并列 |
-| 包豪斯 bauhaus | Bauhaus | 大胆·几何 | 设计/思维 |
-| 粗野 neo-brutalism | Neo-Brutalism | 冲·直接 | 清醒/观点 |
-| 性冷淡 minimal-quiet | 极简主义 | 安静·高级 | 极简生活/审美 |
-| 得意黑海报 bold-poster | Bold Poster | 冲击·宣言 | 自律/搞钱 |
-| 孟菲斯 memphis | Memphis 80s | 活泼·俏皮 | 松弛/生活 |
-| 打字机便签 typewriter-memo | 索引卡 | 低调·手作 | 自我对话/治愈 |
+| **warm-editorial** | Didone editorial | warm · restrained | feelings / lifestyle / methods |
+| **swiss-grid** | Swiss / International | rational · clean | knowledge / English / work |
+| **vintage-collage** | engraving collage | quiet · literary | psychology / long-form |
+| **bauhaus** | Bauhaus | bold · geometric | design / thinking |
+| **neo-brutalism** | neo-brutalism | punchy · direct | opinions / wake-up calls |
+| **minimal-quiet** | minimalism | calm · premium | minimal living / aesthetics |
+| **bold-poster** | bold poster | high-impact · manifesto | discipline / money / takes |
+| **memphis** | Memphis 80s | playful · retro | relaxed / lifestyle / moods |
+| **typewriter-memo** | index-card memo | low-key · intimate | self-talk / healing / journal |
 
-每套都覆盖全部模块 + 4 种图文版式(上图下文 / 左图右文 / 双竖图拼 / 四图网格)。
+Every style covers: cover · body · concept · data · compare · steps · quote · list · closing, plus 4 image layouts (image-top / image-side / two-portrait / 4-grid).
 
-## 样张
+## Style Gallery
 
 | | | |
 |:--:|:--:|:--:|
-| ![暖纸编辑](skills/card-layout/styles/warm-editorial/sample-cover.png)<br>暖纸编辑 | ![瑞士网格](skills/card-layout/styles/swiss-grid/sample.png)<br>瑞士网格 | ![版画长文](skills/card-layout/styles/vintage-collage/sample-hook.png)<br>版画长文 |
-| ![彩色文件夹](skills/card-layout/styles/folder-doodle/sample.png)<br>彩色文件夹 | ![包豪斯](skills/card-layout/styles/bauhaus/sample.png)<br>包豪斯 | ![粗野](skills/card-layout/styles/neo-brutalism/sample.png)<br>粗野 |
-| ![性冷淡](skills/card-layout/styles/minimal-quiet/sample.png)<br>性冷淡 | ![得意黑海报](skills/card-layout/styles/bold-poster/sample.png)<br>得意黑海报 | ![孟菲斯](skills/card-layout/styles/memphis/sample.png)<br>孟菲斯 |
-| ![打字机便签](skills/card-layout/styles/typewriter-memo/sample.png)<br>打字机便签 | | |
+| ![warm-editorial](skills/card-layout/styles/warm-editorial/sample-cover.png)<br>warm-editorial | ![swiss-grid](skills/card-layout/styles/swiss-grid/sample.png)<br>swiss-grid | ![vintage-collage](skills/card-layout/styles/vintage-collage/sample-hook.png)<br>vintage-collage |
+| ![bauhaus](skills/card-layout/styles/bauhaus/sample.png)<br>bauhaus | ![neo-brutalism](skills/card-layout/styles/neo-brutalism/sample.png)<br>neo-brutalism | ![minimal-quiet](skills/card-layout/styles/minimal-quiet/sample.png)<br>minimal-quiet |
+| ![bold-poster](skills/card-layout/styles/bold-poster/sample.png)<br>bold-poster | ![memphis](skills/card-layout/styles/memphis/sample.png)<br>memphis | ![typewriter-memo](skills/card-layout/styles/typewriter-memo/sample.png)<br>typewriter-memo |
 
-## 完整文档
+## Sizes & Platforms
 
-- 工作流与规则:[`skills/card-layout/SKILL.md`](skills/card-layout/SKILL.md)
-- 详细说明与扩展(怎么加新风格):[`skills/card-layout/README.md`](skills/card-layout/README.md)
+- **Xiaohongshu / general:** `3:4 = 1080×1440` (default).
+- **Instagram carousel:** `4:5 = 1080×1350` (recommended — tallest in-feed, best engagement); `1:1 = 1080×1080` (cross-platform / paid).
+- All cards in one carousel must share the same ratio. Pick the platform up front; the skill renders the whole set at that size.
 
-## 依赖
+## Languages
 
-macOS + Google Chrome(无头出图)· `python3` + `Pillow`(拼图自审)· 中文 webfont 走 CDN(渲染时联网)。
+Chinese, English, or bilingual. Each style ships a `Latin, CJK` font stack — English glyphs render in the Latin face, Chinese in the CJK face. Title-no-quotes and hierarchy rules apply in both; CJK-only rules (full-width punctuation, pangu spacing) are skipped for English.
 
-## 致谢 · 许可
+## Architecture
 
-方法论参考 [归藏 social-card-skill](https://github.com/op7418/guizang-social-card-skill) 与 [Zara Zhang · frontend-slides](https://github.com/zarazhangrui/frontend-slides)。MIT License。
+Progressive disclosure — `SKILL.md` is the map; supporting files load on demand:
+
+| File | Purpose | Loaded when |
+|---|---|---|
+| `SKILL.md` | Workflow + rules | Always |
+| `styles/index.json` | Style catalog (metadata) | Style selection (read first) |
+| `styles/<slug>/sample-*.png` | Previews | Pick-by-eye |
+| `styles/<slug>/design.md` | Full recipe for the chosen style | After the user picks |
+| `styles/<slug>/page-*.html` | Per-module templates | Render |
+| `scripts/render.sh` · `shoot.sh` | Render + contact-sheet self-review | Render / review |
+
+## Add a New Style
+
+Copy a `styles/<slug>/` folder → edit `meta.json` (name / topics / mood / density) + `design.md` (motif / palette / fonts / signature move / page set / do-don't) → render `sample-*.png` → register one entry in `styles/index.json`. The best way to find a motif: send the skill a reference image you love and have it do a 7-point teardown (motif / palette / fonts / signature / atmosphere / layout / fit).
+
+## Requirements
+
+macOS + Google Chrome (headless render) · `python3` + `Pillow` (contact-sheet review) · CJK webfonts load from ZeoSeven / Google Fonts CDN at render time.
+
+## Credits
+
+Methodology informed by [guizang social-card-skill](https://github.com/op7418/guizang-social-card-skill) and [Zara Zhang's frontend-slides](https://github.com/zarazhangrui/frontend-slides) (progressive disclosure + pick-by-preview). Fonts: Smiley Sans, KingHwa OldSong, WenJin Mincho, Source Han, Playfair Display, DM Sans, Cormorant Garamond, JetBrains Mono — all free for commercial use.
+
+## License
+
+MIT — use it, modify it, share it.

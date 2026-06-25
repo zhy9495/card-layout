@@ -2,7 +2,7 @@
 
 > 母题:**Swiss / 国际主义平面设计**(Müller-Brockmann、Akzidenz/Helvetica 传统)。
 > 灵魂一句话:**理性的网格 + 无衬线大字 + 红黑白**——靠秩序和留白显高级,不靠装饰。
-> 经典平面设计第一课。和 warm-editorial(暖衬线)、folder-doodle(俏皮)完全不同:**冷静、专业、几何**。
+> 经典平面设计第一课。和 warm-editorial(暖衬线)、memphis(俏皮)完全不同:**冷静、专业、几何**。
 
 ---
 
@@ -85,7 +85,7 @@
 ## 8. 适合 / 不适合
 
 适合:**知识 / 方法 / 清单 / 观点 / 效率职场** —— 要"专业可信、清晰有力"的内容。
-不适合:温柔治愈、文艺抒情(找 warm-editorial / vintage-collage)、热闹俏皮(找 folder-doodle)。
+不适合:温柔治愈、文艺抒情(找 warm-editorial / vintage-collage)、热闹俏皮(找 memphis)。
 
 ---
 

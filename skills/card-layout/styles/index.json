@@ -22,20 +22,6 @@
       "sample": "styles/warm-editorial/sample-cover.png"
     },
     {
-      "slug": "folder-doodle",
-      "name": "彩色文件夹 · 手绘涂鸦",
-      "tagline": "浅米底 + 深酒红衬线标题 + 彩色拟物文件夹 + 配色手绘箭头/涂鸦；俏皮、聪明、高密度。",
-      "motif": "桌面文件夹拟物 × 手绘涂鸦 × 编辑衬线",
-      "mood": ["俏皮", "聪明", "松弛", "设计感", "热闹"],
-      "density": "high",
-      "fit_modules": ["分类", "并列", "对比", "概念拆块"],
-      "fit_topics": ["心理(情绪分类)", "英语(词汇/语法归类)", "测评维度", "方法论要素"],
-      "avoid": ["线性叙事/长段落", "需要安静克制的内容(找 warm-editorial)"],
-      "palette_inline": true,
-      "design_md": "styles/folder-doodle/design.md",
-      "sample": "styles/folder-doodle/sample.png"
-    },
-    {
       "slug": "vintage-collage",
       "name": "复古拼贴 · 静默长文",
       "tagline": "暖白纸纹底 + 近黑白 + 一抹荧光 + 黑白复古版画拼贴 + 高对比衬线大引号；安静、艺术、文学。",
@@ -45,7 +31,7 @@
       "card_types": ["hook 钩子卡", "longtext 纯长文卡"],
       "fit_modules": ["金句", "钩子", "长文叙述", "观点", "故事"],
       "fit_topics": ["心理", "情感", "成长", "心灵旷野", "观点长文"],
-      "avoid": ["信息密集的教程/清单/分类(找 folder-doodle)", "需要明快活泼(找 folder-doodle)"],
+      "avoid": ["信息密集的教程/清单/分类(找 memphis)", "需要明快活泼(找 memphis)"],
       "palette_inline": true,
       "design_md": "styles/vintage-collage/design.md",
       "sample": "styles/vintage-collage/sample-hook.png"
@@ -59,7 +45,7 @@
       "density": "medium",
       "fit_modules": ["知识", "方法", "清单", "观点"],
       "fit_topics": ["英语", "知识干货", "商业", "效率", "职场"],
-      "avoid": ["温柔治愈/文艺(找 warm-editorial/vintage-collage)", "热闹俏皮(找 folder-doodle)"],
+      "avoid": ["温柔治愈/文艺(找 warm-editorial/vintage-collage)", "热闹俏皮(找 memphis)"],
       "palette_inline": true,
       "design_md": "styles/swiss-grid/design.md",
       "sample": "styles/swiss-grid/sample.png"
