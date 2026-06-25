@@ -8,8 +8,8 @@ A coding-agent skill that turns **already-written copy (plus optional images)** 
 
 Card Layout uses a **"show, don't tell"** approach: instead of asking you to describe a look in words, it **reads your content, plans the cards, and shows you real sample covers to choose from**. Three things it does for you:
 
-1. **Read & split** — reads the whole piece and decides the best module for each段/section (cover, body, concept, data, compare, steps, quote, list, closing, image).
-2. **Auto-pair images** — just drop your images in; it looks at each image, reads the copy, and places each one next to the段 it belongs to. No tagging required.
+1. **Read & split** — reads the whole piece and decides the best module for each section (cover, body, concept, data, compare, steps, quote, list, closing, image).
+2. **Auto-pair images** — just drop your images in; it looks at each image, reads the copy, and places each one next to the section it belongs to. No tagging required.
 3. **Pick a style by eye** — it filters the 9 built-in styles by your content, then renders 2–3 sample covers for you to choose.
 
 ## Key Features
