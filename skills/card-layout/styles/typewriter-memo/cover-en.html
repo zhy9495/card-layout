@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F1ECDD; --ink:#2B2824; --stamp:#B23A2E; --muted:#9C9484; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{ background:var(--paper); color:var(--ink); font-family:'JetBrains Mono','Noto Sans SC',monospace;
+    position:relative; padding:96px 96px 90px; }
+  body::before{ content:""; position:absolute; inset:0; pointer-events:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>"); opacity:.07; mix-blend-mode:multiply; }
+  .head{ display:flex; justify-content:space-between; border-bottom:2px dashed var(--ink); padding-bottom:16px;
+    font-size:25px; font-weight:700; letter-spacing:.12em; }
+  .body{ margin-top:80px; position:relative; }
+  .body p{ font-family:'JetBrains Mono','Noto Sans SC',monospace; font-size:40px; line-height:2.0; letter-spacing:.02em;
+    border-bottom:1.5px solid rgba(43,40,36,.18); padding-bottom:6px; margin-bottom:30px; }
+  .stamp{ position:absolute; right:30px; bottom:300px; transform:rotate(-12deg);
+    border:5px solid var(--stamp); color:var(--stamp); font-weight:700; font-size:46px; letter-spacing:.1em;
+    padding:14px 26px; border-radius:8px; opacity:.85; }
+  .foot{ position:absolute; bottom:80px; left:96px; right:96px; display:flex; justify-content:space-between;
+    font-size:23px; color:var(--muted); letter-spacing:.08em; }
+</style></head>
+<body>
+  <div class="head"><span>MEMO | NOTE</span><span>NO.07</span></div>
+  <div class="body">
+    <p>To: future me</p>
+    <p>No rush.</p>
+    <p>You've come a long way.</p>
+    <p>The rest, slowly.</p>
+    <div class="stamp">RECEIVED</div>
+  </div>
+  <div class="foot"><span>@letters.to.self</span><span>2026 / memo</span></div>
+</body></html>

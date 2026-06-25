@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;900&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F7F2E7; --ink:#1C1C1C; --teal:#27C2B0; --pink:#FF6FB5; --yellow:#FFD23F; --coral:#FF6B4A; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Inter','Noto Sans SC',sans-serif; position:relative; padding:90px; overflow:hidden; }
+  .label{ font-size:25px; font-weight:800; letter-spacing:.14em; }
+  .main{ position:absolute; top:50%; left:90px; right:90px; transform:translateY(-50%); }
+  .headline{ font-family:'Noto Sans SC',sans-serif; font-weight:900; font-size:150px; line-height:1.0; letter-spacing:-.01em; }
+  .headline .p{ color:var(--pink); } .headline .t{ color:var(--teal); }
+  .sub{ font-family:'Noto Sans SC',sans-serif; font-weight:700; font-size:34px; margin-top:36px; }
+  .foot{ position:absolute; bottom:84px; left:90px; right:90px; display:flex; justify-content:space-between; font-weight:800; font-size:25px; }
+  /* 孟菲斯碎片 */
+  .s{ position:absolute; }
+  .dots{ position:absolute; top:150px; left:210px; width:160px; height:90px;
+    background-image:radial-gradient(var(--ink) 7px, transparent 8px); background-size:34px 34px; }
+</style></head>
+<body>
+  <div class="label">★ WEEKEND MOOD</div>
+  <!-- 碎片 -->
+  <svg class="s" style="top:120px;right:120px" width="150" height="150"><path d="M10 75 Q40 20 75 75 T140 75" stroke="#FF6B4A" stroke-width="11" fill="none" stroke-linecap="round"/></svg>
+  <svg class="s" style="top:300px;right:300px" width="120" height="120"><polygon points="60,8 112,108 8,108" fill="none" stroke="#27C2B0" stroke-width="10"/></svg>
+  <div class="dots"></div>
+  <svg class="s" style="bottom:280px;right:140px" width="150" height="150"><circle cx="75" cy="75" r="60" fill="#FFD23F"/></svg>
+  <svg class="s" style="bottom:330px;left:150px" width="170" height="60"><path d="M6 6 L34 54 L62 6 L90 54 L118 6 L146 54" stroke="#FF6FB5" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+  <div class="main">
+    <h1 class="headline">make <span class="p">money</span><br>stay <span class="t">happy</span></h1>
+    <p class="sub">Work hard — but don't grind yourself joyless.</p>
+  </div>
+  <div class="foot"><span>@easy.money</span><span>WORK · BUT HAPPY</span></div>
+</body></html>
