@@ -1,0 +1,14 @@
+{
+  "name": "card-layout",
+  "version": "1.0.0",
+  "description": "小红书 / 公众号 3:4 图文卡片排版出图器:读稿切卡 + 自动配图 + 看图选风格,10 套成套风格 × 多模块。纯排版出图,不生成文字。",
+  "skills": "./skills/",
+  "author": {
+    "name": "zhangying",
+    "url": "https://github.com/zhy9495"
+  },
+  "homepage": "https://github.com/zhy9495/card-layout",
+  "repository": "https://github.com/zhy9495/card-layout",
+  "license": "MIT",
+  "keywords": ["xiaohongshu", "小红书", "cards", "layout", "design", "图文", "排版", "skill"]
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F1EEE3; --ink:#1A1A1A; --lime:#D8F24A; --muted:#8A857A; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'Inter','Noto Sans SC',sans-serif;
+    position:relative; overflow:hidden;
+    padding:120px 110px;
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  /* 纸纹颗粒 */
+  body::before{
+    content:""; position:absolute; inset:0; pointer-events:none; z-index:0;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    opacity:.10; mix-blend-mode:multiply;
+  }
+  .body-copy{position:relative; z-index:1; font-size:42px; line-height:1.68; max-width:840px;}
+  .body-copy p{margin-bottom:40px;}
+  .body-copy p:last-child{margin-bottom:0;}
+  .mark{
+    background:linear-gradient(var(--lime),var(--lime));
+    background-size:100% 46%; background-position:0 76%; background-repeat:no-repeat;
+    padding:0 2px;
+  }
+  .em{font-style:italic;}
+  .foot{position:absolute; bottom:80px; left:110px; right:110px; display:flex; justify-content:space-between;
+    font-size:24px; letter-spacing:.04em; color:var(--muted); z-index:1;}
+/*ALIGNFIX*/.serif{margin-left:-0.09em;}</style>
+</head>
+<body>
+  <div class="body-copy">
+    <p>你带过团队。<br>谈成过合作。<br>从零做出过东西。</p>
+    <p>可只要有人说一句「该你了」，<br>你就忽然变成另一个人。</p>
+    <p>更僵，更稳，更小心。</p>
+    <p>你在实时地，<span class="mark">自我删减</span>。</p>
+  </div>
+  <div class="foot">
+    <span>@心灵旷野</span>
+    <span>表达这件小事</span>
+  </div>
+</body>
+</html>

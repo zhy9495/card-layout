@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F7F2E7; --ink:#1C1C1C; --teal:#27C2B0; --pink:#FF6FB5; --yellow:#FFD23F; --coral:#FF6B4A; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Inter','Noto Sans SC',sans-serif; position:relative; overflow:hidden; padding:104px 96px; }
+  /* 招牌收成角落小点缀(响亮档的碎片,缩小到不抢正文) */
+  .s{ position:absolute; }
+  .kicker{ font-family:'Noto Sans SC'; font-weight:900; font-size:34px; letter-spacing:.04em; }
+  .kicker .u{ background:var(--yellow); padding:2px 8px; }
+  .body{ position:absolute; top:50%; left:96px; right:120px; transform:translateY(-50%); }
+  .body p{ font-family:'Noto Sans SC',sans-serif; font-weight:400; font-size:41px; line-height:1.95; margin-bottom:30px; }
+  .body .hl{ font-weight:700; color:var(--pink); }
+  .foot{ position:absolute; bottom:84px; left:96px; right:96px; display:flex; justify-content:space-between; font-weight:700; font-size:25px; font-family:'Noto Sans SC'; }
+</style></head>
+<body>
+  <!-- 角落小碎片:克制版招牌 -->
+  <svg class="s" style="top:96px;right:110px" width="110" height="60"><path d="M6 30 Q30 6 54 30 T104 30" stroke="var(--coral)" stroke-width="9" fill="none" stroke-linecap="round"/></svg>
+  <div class="s" style="top:200px;right:150px;width:74px;height:74px;border-radius:50%;background:var(--yellow)"></div>
+  <svg class="s" style="bottom:150px;left:110px" width="120" height="44"><path d="M5 5 L26 39 L47 5 L68 39 L89 5 L110 39" stroke="var(--teal)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="s" style="bottom:240px;right:120px;width:96px;height:96px;background-image:radial-gradient(var(--ink) 5px,transparent 6px);background-size:26px 26px"></div>
+
+  <div class="kicker">随笔 · <span class="u">表达这件小事</span></div>
+  <div class="body">
+    <p>很多时候，我们不是不会表达，</p>
+    <p>是太怕表达得不好——</p>
+    <p>于是每句话都先在心里改三遍，<br>改到最后，那点想说的劲儿，也凉了。</p>
+    <p>可其实没人在等一个完美的你，<br>大家只是想听见，<span class="hl">真实的你</span>。</p>
+  </div>
+  <div class="foot"><span>@松弛搞钱</span><span>BE REAL</span></div>
+</body></html>

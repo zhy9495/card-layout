@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#EFE9DC; --ink:#1A1A1A; --red:#E2412B; --blue:#2B57C4; --yellow:#F2C200; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Inter','Noto Sans SC',sans-serif; position:relative; padding:90px; }
+  .label{ font-size:25px; font-weight:700; letter-spacing:.16em; }
+  .circle{ position:absolute; top:250px; right:96px; width:300px; height:300px; border-radius:50%; background:var(--yellow); }
+  .square{ position:absolute; top:430px; right:300px; width:200px; height:200px; background:var(--blue); }
+  .tri{ position:absolute; top:300px; left:96px; }
+  .bar{ position:absolute; top:236px; left:96px; width:360px; height:14px; background:var(--ink); }
+  .headline{ position:absolute; bottom:300px; left:90px; font-family:'Noto Sans SC',sans-serif; font-weight:900; font-size:130px; line-height:1.04; letter-spacing:-.01em; }
+  .headline .r{ color:var(--red); }
+  .foot{ position:absolute; bottom:96px; left:90px; right:90px; display:flex; justify-content:space-between; border-top:3px solid var(--ink); padding-top:16px; font-size:25px; font-weight:700; letter-spacing:.08em;}
+</style></head>
+<body>
+  <div class="label">BAUHAUS ｜ 设计思维</div>
+  <div class="bar"></div>
+  <div class="circle"></div>
+  <div class="square"></div>
+  <svg class="tri" width="190" height="168"><polygon points="95,0 190,168 0,168" fill="#E2412B"/></svg>
+  <h1 class="headline">把复杂<br>拆成<span class="r">简单</span></h1>
+  <div class="foot"><span>@设计思维笔记</span><span>FORM · FUNCTION</span></div>
+</body></html>

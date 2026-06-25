@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F2F0EA; --ink:#141414; --red:#E2231A; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{ background:var(--paper); color:var(--ink); font-family:'Inter','Noto Sans SC',sans-serif;
+    position:relative; padding:90px; }
+  /* 顶部网格标签行 */
+  .top{ display:flex; justify-content:space-between; align-items:flex-end;
+    border-bottom:3px solid var(--ink); padding-bottom:16px;
+    font-size:25px; font-weight:500; letter-spacing:.14em; }
+  .top .r{ color:var(--red); }
+  /* 几何强调:右侧红方块 */
+  .square{ position:absolute; top:230px; right:90px; width:168px; height:168px; background:var(--red); }
+  /* 主标题 flush-left */
+  .headline{ font-family:'Noto Sans SC',sans-serif; font-weight:900;
+    font-size:138px; line-height:1.05; letter-spacing:-.01em; margin-top:150px; }
+  .headline .red{ color:var(--red); }
+  .rule{ width:300px; height:10px; background:var(--ink); margin-top:54px; }
+  .sub{ font-size:33px; line-height:1.6; font-weight:400; margin-top:40px; max-width:760px;
+    font-family:'Noto Sans SC',sans-serif; }
+  /* 底部网格 */
+  .foot{ position:absolute; bottom:90px; left:90px; right:90px;
+    display:flex; justify-content:space-between; align-items:center;
+    border-top:2px solid var(--ink); padding-top:18px;
+    font-size:25px; font-weight:500; letter-spacing:.08em; }
+  .foot .num{ font-family:'Inter',sans-serif; }
+</style>
+</head>
+<body>
+  <div class="top"><span>雅思 · 记忆方法</span><span class="r">METHOD</span></div>
+  <div class="square"></div>
+
+  <h1 class="headline">背单词<br>靠<span class="red">间隔</span><br>不靠遍数</h1>
+  <div class="rule"></div>
+  <p class="sub">记忆是「间隔」出来的，不是「重复」出来的——<br>到点复习一次，胜过一口气背十遍。</p>
+
+  <div class="foot"><span>@雅思上岸笔记</span><span class="num">01 / 06</span></div>
+</body>
+</html>

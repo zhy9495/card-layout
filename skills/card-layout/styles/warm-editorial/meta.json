@@ -1,0 +1,23 @@
+{
+  "slug": "warm-editorial",
+  "name": "暖纸编辑感 · 高对比衬线",
+  "motif": "Didone 衬线报头 × 当代个人品牌连发",
+  "mood": ["编辑感", "克制", "高级", "留白", "暖"],
+  "density": "low",
+  "fit_modules": ["步骤", "清单", "概念", "金句"],
+  "fit_topics": ["方法论", "知识干货", "英语学习", "成长", "生活方式"],
+  "palette": {
+    "paper": "#EFE9DC",
+    "ink": "#1F1B16",
+    "accent": "#B85C44",
+    "line": "#1A1A1A"
+  },
+  "fonts": {
+    "display_latin": "Playfair Display",
+    "display_cjk": "京华老宋体 KingHwaOldSong (ZeoSeven CDN, 免费商用)",
+    "display_cjk_fallback": "Noto Serif SC 思源宋体 900",
+    "body_latin": "Inter",
+    "body_cjk": "Noto Sans SC (思源黑体)"
+  },
+  "signature": ["超大锈红数字编号", "手绘波浪箭头(可跨卡流动)", "只用一个强调色 + 大留白"]
+}

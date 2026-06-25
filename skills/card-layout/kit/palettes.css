@@ -1,0 +1,90 @@
+/* ============================================================
+   card-layout · 配色库 (palettes)
+   来源：用户提供的「配色灵感」组卡（Xu Tinghao）
+   结构：每组 = 纸感米白底 (--paper) + 主强调 (--accent) + 辅强调 (--accent-2)
+         --ink 为正文/标题深色；--paper 永远是卡片/页面底
+   用法：给 <body> 或卡片容器加 class，如 <body class="pal-guzhi-zhuhong">
+   —— 持续追加中，用户分批提供 ——
+   ============================================================ */
+
+/* 1 · 古纸鎏金朱红组 */
+.pal-guzhi-zhuhong {
+  --paper:    #F0DEBF;  /* 奶杏米 */
+  --accent:   #B22A2A;  /* 砖红褐 */
+  --accent-2: #F6C12C;  /* 琥珀柠黄 */
+  --ink:      #4A1F15;
+}
+
+/* 2 · 麦浪青野组 */
+.pal-mailang-qingye {
+  --paper:    #F1ECE0;  /* 麻纸米白 */
+  --accent:   #117C0D;  /* 草木深绿 */
+  --accent-2: #FAC75E;  /* 麦秆暖黄 */
+  --ink:      #143D10;
+}
+
+/* 3 · 纸棕森绿质朴组 */
+.pal-zhizong-senlv {
+  --paper:    #FAF3E9;  /* 纸浆米白 */
+  --accent:   #A8703F;  /* 陶土棕 */
+  --accent-2: #5C614D;  /* 橄榄深绿 */
+  --ink:      #2E3326;
+}
+
+/* 4 · 晴空橙光奶油组 */
+.pal-qingkong-chengguang {
+  --paper:    #FAEDD1;  /* 奶油米白 */
+  --accent:   #1387C0;  /* 晴空海蓝 */
+  --accent-2: #F4520D;  /* 暖橙光 */
+  --ink:      #0D3A52;
+}
+
+/* 5 · 纸红复古组 */
+.pal-zhihong-fugu {
+  --paper:    #F1E6D8;  /* 米白 */
+  --accent:   #AA2B3A;  /* 复古朱红 */
+  --accent-2: #28314E;  /* 深海夜蓝 */
+  --ink:      #28314E;
+}
+
+/* 6 · 晴空奶油红组 */
+.pal-qingkong-naiyou {
+  --paper:    #FFFCC9;  /* 蜜罐浅黄 */
+  --accent:   #ED3C38;  /* 番茄果红 */
+  --accent-2: #6AB2FF;  /* 海盐汽水 */
+  --ink:      #6B1410;
+}
+
+/* 7 · 粉黛青芜组 */
+.pal-fendai-qingwu {
+  --paper:    #FFE8E2;  /* 奶雾桃 */
+  --accent:   #74A85C;  /* 松烟绿 */
+  --accent-2: #FBB2CE;  /* 樱花奶冻 */
+  --ink:      #3E5A2E;
+}
+
+/* 8 · 元气撞色三重奏组  —— pop / 无纸底，宜满色块 + 白字 —— */
+.pal-yuanqi-zhuangse {
+  --paper:    #FAF8F2;  /* 中性底（原组无米白） */
+  --accent:   #408BF1;  /* 深海琉璃 */
+  --accent-2: #B887F3;  /* 霓虹紫雾 */
+  --accent-3: #C7ED56;  /* 青柠气泡 */
+  --ink:      #1F2D4D;
+}
+
+/* 9 · 元气多巴胺组  —— pop / 无纸底，宜满色块 + 白字 —— */
+.pal-yuanqi-duobaan {
+  --paper:    #FAF8F2;  /* 中性底（原组无米白） */
+  --accent:   #FF4CA0;  /* 甜辣桃粉 */
+  --accent-2: #3AB1FF;  /* 晴空钴蓝 */
+  --accent-3: #FFEE61;  /* 阳光柠黄 */
+  --ink:      #2A2A2A;
+}
+
+/* 10 · 纸亮红组  —— 鲜红+藏蓝，真鲜艳（建议配 --mute:0 用，别柔化） */
+.pal-zhi-lianghong {
+  --paper:    #FBEBDD;  /* 暖白 */
+  --accent:   #E12B39;  /* 鲜红 */
+  --accent-2: #1E2A4A;  /* 藏蓝 */
+  --ink:      #1E2A4A;
+}

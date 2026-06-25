@@ -1,0 +1,12 @@
+{
+  "slug": "bold-poster",
+  "name": "粗体大字海报",
+  "motif": "Bold Poster 大字海报",
+  "mood": ["冲击", "态度", "宣言", "高对比"],
+  "density": "low",
+  "fit_modules": ["封面", "金句", "概念", "数据", "封底", "图文"],
+  "fit_topics": ["自律", "搞钱", "清醒", "态度", "观点"],
+  "palette": { "bg": "#141414", "paper": "#F2F0EA", "accent": "#F5D300" },
+  "fonts": { "headline": "得意黑 Smiley Sans Oblique (ZeoSeven 92)", "body": "思源黑体 Noto Sans SC" },
+  "signature": ["得意黑超粗压缩大字", "黑底 + 单枚亮黄", "标题满版", "正文档转思源黑常规"]
+}

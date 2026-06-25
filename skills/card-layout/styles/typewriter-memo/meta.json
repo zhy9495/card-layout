@@ -1,0 +1,12 @@
+{
+  "slug": "typewriter-memo",
+  "name": "打字机便签",
+  "motif": "Typewriter / 索引卡备忘",
+  "mood": ["低调", "亲密", "复古", "手作"],
+  "density": "low-medium",
+  "fit_modules": ["正文", "金句", "清单", "概念", "图文"],
+  "fit_topics": ["自我对话", "情绪", "治愈", "日记", "成长"],
+  "palette": { "paper": "#F1ECDD", "ink": "#2B2824", "stamp": "#B23A2E", "muted": "#9C9484" },
+  "fonts": { "headline": "JetBrains Mono + 思源黑体", "body": "JetBrains Mono + 思源黑体(等宽感)" },
+  "signature": ["横线纸 + 纸纹", "等宽字", "红色盖戳(已收到等)", "MEMO 抬头 + 编号"]
+}

@@ -1,0 +1,36 @@
+/* ============================================================
+   card-layout · 色调调节层 (tone)
+   解决两件事：① 预设配色太鲜亮  ② 配色要与插画/照片协调
+   依赖：先有一个 pal-xxx 提供 --paper / --accent / --accent-2 / --ink
+   ============================================================ */
+
+:root{
+  /* 柔化时往里掺的「冷灰」。偏暖可换 #C9C0AE */
+  --mute-toward: #C2C4C0;
+  --mute: 0%;            /* 默认 0% = 忠于色卡原色，不改明度。要柔化再手动调 18%/35% */
+}
+
+/* 有效色：模板一律用 var(--accent-eff) / var(--accent2-eff)，
+   而不是直接 var(--accent)，这样柔化旋钮才生效 */
+*{
+  --accent-eff:  color-mix(in srgb, var(--accent),   var(--mute-toward) var(--mute));
+  --accent2-eff: color-mix(in srgb, var(--accent-2), var(--mute-toward) var(--mute));
+  --accent3-eff: color-mix(in srgb, var(--accent-3, var(--accent-2)), var(--mute-toward) var(--mute));
+}
+
+/* 三档预设，加在 body 或单张卡上 */
+.tone-vivid { --mute: 0%; }
+.tone-soft  { --mute: 18%; }
+.tone-muted { --mute: 35%; }
+
+/* 插画协调：SVG 直接 fill:var(--accent-eff) 即与配色同调 */
+/* 照片协调：给照片容器加 .photo-tone，覆一层暖灰把它拉进纸感冷暖 */
+.photo-tone{ position:relative; }
+.photo-tone::after{
+  content:""; position:absolute; inset:0; pointer-events:none;
+  background:var(--mute-toward); mix-blend-mode:multiply;
+  /* 不同档位的照片柔化强度 */
+  opacity:0;
+}
+.tone-soft  .photo-tone::after{ opacity:.18; }
+.tone-muted .photo-tone::after{ opacity:.32; }

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "card-layout",
+  "description": "小红书 / 公众号 3:4 图文卡片排版出图器:读稿切卡 + 自动配图 + 看图选风格,10 套成套风格 × 多模块。",
+  "owner": {
+    "name": "zhangying",
+    "url": "https://github.com/zhy9495"
+  },
+  "plugins": [
+    {
+      "name": "card-layout",
+      "source": ".",
+      "description": "把写好的文字(+可选图片)排成 1080×1440 的小红书图文连发。纯排版出图下游 skill,不生成文字。",
+      "category": "productivity",
+      "tags": ["xiaohongshu", "小红书", "cards", "layout", "design", "图文", "排版"]
+    }
+  ]
+}

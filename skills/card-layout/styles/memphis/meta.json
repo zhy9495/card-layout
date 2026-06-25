@@ -1,0 +1,12 @@
+{
+  "slug": "memphis",
+  "name": "孟菲斯",
+  "motif": "Memphis 80s 后现代",
+  "mood": ["活泼", "俏皮", "复古", "能量"],
+  "density": "medium",
+  "fit_modules": ["封面", "金句", "概念", "清单", "对比", "图文"],
+  "fit_topics": ["松弛", "生活方式", "情绪", "潮", "搞钱"],
+  "palette": { "paper": "#F7F2E7", "ink": "#1C1C1C", "teal": "#27C2B0", "pink": "#FF6FB5", "yellow": "#FFD23F", "coral": "#FF6B4A" },
+  "fonts": { "headline": "思源黑体 Noto Sans SC 900", "body": "思源黑体 / Inter" },
+  "signature": ["波浪/锯齿/圆点/三角碎片", "撞色", "圆角", "关键词点色"]
+}

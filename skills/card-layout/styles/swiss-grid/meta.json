@@ -1,0 +1,15 @@
+{
+  "slug": "swiss-grid",
+  "name": "瑞士国际主义网格",
+  "motif": "Swiss / 国际主义平面设计 (Müller-Brockmann)",
+  "mood": ["理性", "专业", "清晰", "现代", "克制"],
+  "density": "medium",
+  "fit_modules": ["知识", "方法", "清单", "观点"],
+  "fit_topics": ["英语", "知识干货", "商业", "效率", "职场"],
+  "palette": { "paper": "#F2F0EA", "ink": "#141414", "red": "#E2231A" },
+  "fonts": {
+    "headline": "思源黑体 Noto Sans SC 900 (Helvetica 的中文等价)",
+    "body": "思源黑体 Noto Sans SC / 英文 Inter"
+  },
+  "signature": ["严格网格(顶/底分隔线)", "红黑白三色", "无衬线大字 flush-left", "几何红方块强调", "大量留白"]
+}

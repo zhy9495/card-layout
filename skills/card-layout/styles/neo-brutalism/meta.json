@@ -1,0 +1,12 @@
+{
+  "slug": "neo-brutalism",
+  "name": "新粗野主义",
+  "motif": "Neo-Brutalism",
+  "mood": ["冲", "直接", "现代", "叛逆"],
+  "density": "medium-high",
+  "fit_modules": ["观点", "金句", "对比", "清单", "数据", "图文"],
+  "fit_topics": ["清醒", "观点", "成长", "自我", "干货"],
+  "palette": { "paper": "#F4EFDF", "ink": "#111111", "yellow": "#FFD23F", "pink": "#FF5CA8", "cyan": "#4ECDC4" },
+  "fonts": { "headline": "思源黑体 Noto Sans SC 900", "body": "思源黑体 / Inter" },
+  "signature": ["粗黑边框", "硬质偏移投影", "撞色色块", "圆点底纹"]
+}

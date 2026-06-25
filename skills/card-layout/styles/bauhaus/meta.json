@@ -1,0 +1,12 @@
+{
+  "slug": "bauhaus",
+  "name": "包豪斯几何",
+  "motif": "Bauhaus 包豪斯",
+  "mood": ["大胆", "几何", "创意", "理性"],
+  "density": "medium",
+  "fit_modules": ["概念", "数据", "对比", "观点", "清单", "图文"],
+  "fit_topics": ["设计", "思维", "知识", "创意", "方法论"],
+  "palette": { "paper": "#EFE9DC", "ink": "#1A1A1A", "red": "#E2412B", "blue": "#2B57C4", "yellow": "#F2C200" },
+  "fonts": { "headline": "思源黑体 Noto Sans SC 900", "body": "思源黑体 / Inter" },
+  "signature": ["三原色几何(圆/方/三角)", "黑色横杠", "网格页脚", "无衬线大字"]
+}

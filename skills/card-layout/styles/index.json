@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "note": "风格库目录。skill 先读本文件出选项；用户选中某套后，才读该套的 design.md。新增风格 = 加一个 styles/<slug>/ 文件夹并在此登记。",
+  "usage": {
+    "selection": "先读本 index 的元数据筛选/出选项给用户。",
+    "final": "用户选中后，只读该 slug 的 design.md 再渲染。",
+    "never": "不要一次性把所有 design.md 读进上下文。"
+  },
+  "styles": [
+    {
+      "slug": "warm-editorial",
+      "name": "暖纸编辑感 · 高对比衬线",
+      "tagline": "暖米纸底 + 单枚锈陶红 + 高对比衬线大标题 + 手绘波浪箭头；克制、留白、像本杂志。",
+      "motif": "Didone 衬线报头(Vogue/时尚刊) × 当代个人品牌连发",
+      "mood": ["编辑感", "克制", "高级", "留白", "暖"],
+      "density": "low",
+      "fit_modules": ["步骤", "清单", "概念", "金句"],
+      "fit_topics": ["方法论", "知识干货", "英语学习", "成长", "生活方式"],
+      "avoid": ["需要热闹/多巴胺撞色的内容", "重纹理做旧风"],
+      "palette_inline": true,
+      "design_md": "styles/warm-editorial/design.md",
+      "sample": "styles/warm-editorial/sample-cover.png"
+    },
+    {
+      "slug": "folder-doodle",
+      "name": "彩色文件夹 · 手绘涂鸦",
+      "tagline": "浅米底 + 深酒红衬线标题 + 彩色拟物文件夹 + 配色手绘箭头/涂鸦；俏皮、聪明、高密度。",
+      "motif": "桌面文件夹拟物 × 手绘涂鸦 × 编辑衬线",
+      "mood": ["俏皮", "聪明", "松弛", "设计感", "热闹"],
+      "density": "high",
+      "fit_modules": ["分类", "并列", "对比", "概念拆块"],
+      "fit_topics": ["心理(情绪分类)", "英语(词汇/语法归类)", "测评维度", "方法论要素"],
+      "avoid": ["线性叙事/长段落", "需要安静克制的内容(找 warm-editorial)"],
+      "palette_inline": true,
+      "design_md": "styles/folder-doodle/design.md",
+      "sample": "styles/folder-doodle/sample.png"
+    },
+    {
+      "slug": "vintage-collage",
+      "name": "复古拼贴 · 静默长文",
+      "tagline": "暖白纸纹底 + 近黑白 + 一抹荧光 + 黑白复古版画拼贴 + 高对比衬线大引号；安静、艺术、文学。",
+      "motif": "编辑杂志 × 复古版画拼贴 × 荧光笔标记 × 纸纹",
+      "mood": ["安静", "艺术", "近黑白", "文学", "高级"],
+      "density": "low",
+      "card_types": ["hook 钩子卡", "longtext 纯长文卡"],
+      "fit_modules": ["金句", "钩子", "长文叙述", "观点", "故事"],
+      "fit_topics": ["心理", "情感", "成长", "心灵旷野", "观点长文"],
+      "avoid": ["信息密集的教程/清单/分类(找 folder-doodle)", "需要明快活泼(找 folder-doodle)"],
+      "palette_inline": true,
+      "design_md": "styles/vintage-collage/design.md",
+      "sample": "styles/vintage-collage/sample-hook.png"
+    },
+    {
+      "slug": "swiss-grid",
+      "name": "瑞士国际主义网格",
+      "tagline": "红黑白 + 严格网格 + 无衬线大字 flush-left + 几何红方块；理性、专业、清晰。",
+      "motif": "Swiss / 国际主义平面设计",
+      "mood": ["理性", "专业", "清晰", "现代", "克制"],
+      "density": "medium",
+      "fit_modules": ["知识", "方法", "清单", "观点"],
+      "fit_topics": ["英语", "知识干货", "商业", "效率", "职场"],
+      "avoid": ["温柔治愈/文艺(找 warm-editorial/vintage-collage)", "热闹俏皮(找 folder-doodle)"],
+      "palette_inline": true,
+      "design_md": "styles/swiss-grid/design.md",
+      "sample": "styles/swiss-grid/sample.png"
+    },
+    {
+      "slug": "bauhaus",
+      "name": "包豪斯几何",
+      "tagline": "三原色 + 圆/方/三角几何 + 思源黑大字;大胆、创意、理性。",
+      "motif": "Bauhaus", "mood": ["大胆", "几何", "创意"], "density": "medium",
+      "fit_modules": ["概念", "数据", "对比", "观点", "清单", "图文"],
+      "fit_topics": ["设计", "思维", "知识", "创意"],
+      "design_md": "styles/bauhaus/design.md", "sample": "styles/bauhaus/sample.png"
+    },
+    {
+      "slug": "neo-brutalism",
+      "name": "新粗野主义",
+      "tagline": "粗黑边框 + 硬投影 + 撞色块 + 圆点底;冲、直接、现代。",
+      "motif": "Neo-Brutalism", "mood": ["冲", "直接", "叛逆"], "density": "medium-high",
+      "fit_modules": ["观点", "金句", "对比", "清单", "数据", "图文"],
+      "fit_topics": ["清醒", "观点", "成长", "干货"],
+      "design_md": "styles/neo-brutalism/design.md", "sample": "styles/neo-brutalism/sample.png"
+    },
+    {
+      "slug": "minimal-quiet",
+      "name": "极简性冷淡",
+      "tagline": "近白 + 极小字 + 细线 + 超大留白;安静、克制、高级。",
+      "motif": "Minimalism", "mood": ["安静", "克制", "高级"], "density": "low",
+      "fit_modules": ["金句", "概念", "正文", "封底", "图文"],
+      "fit_topics": ["极简生活", "自我", "审美", "心境"],
+      "design_md": "styles/minimal-quiet/design.md", "sample": "styles/minimal-quiet/sample.png"
+    },
+    {
+      "slug": "bold-poster",
+      "name": "粗体大字海报",
+      "tagline": "黑底 + 得意黑超粗压缩大字 + 单枚亮黄;冲击、态度、宣言。",
+      "motif": "Bold Poster", "mood": ["冲击", "态度", "宣言"], "density": "low",
+      "fit_modules": ["封面", "金句", "概念", "数据", "封底", "图文"],
+      "fit_topics": ["自律", "搞钱", "清醒", "态度"],
+      "design_md": "styles/bold-poster/design.md", "sample": "styles/bold-poster/sample.png"
+    },
+    {
+      "slug": "memphis",
+      "name": "孟菲斯",
+      "tagline": "撞色碎片(波浪/锯齿/圆点)+ 圆角 + 思源黑大字;活泼、俏皮、复古。",
+      "motif": "Memphis 80s", "mood": ["活泼", "俏皮", "能量"], "density": "medium",
+      "fit_modules": ["封面", "金句", "概念", "清单", "对比", "图文"],
+      "fit_topics": ["松弛", "生活方式", "情绪", "潮"],
+      "design_md": "styles/memphis/design.md", "sample": "styles/memphis/sample.png"
+    },
+    {
+      "slug": "typewriter-memo",
+      "name": "打字机便签",
+      "tagline": "横线纸 + 等宽字 + 红色盖戳 + MEMO 抬头;低调、亲密、手作。",
+      "motif": "Typewriter / 索引卡", "mood": ["低调", "亲密", "手作"], "density": "low-medium",
+      "fit_modules": ["正文", "金句", "清单", "概念", "图文"],
+      "fit_topics": ["自我对话", "情绪", "治愈", "日记"],
+      "design_md": "styles/typewriter-memo/design.md", "sample": "styles/typewriter-memo/sample.png"
+    }
+  ]
+}

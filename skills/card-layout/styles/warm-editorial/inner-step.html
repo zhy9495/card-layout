@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<link href="https://fontsapi.zeoseven.com/309/main/result.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#EFE9DC; --ink:#1F1B16; --accent:#B85C44; --line:#1A1A1A; }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{width:1080px;height:1440px;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:'KingHwaOldSong','Playfair Display',serif;
+    position:relative;
+  }
+  .brand{position:absolute; top:96px; left:90px; color:var(--accent); font-size:27px; letter-spacing:.06em;}
+  .main{position:absolute; top:50%; left:90px; right:90px; transform:translateY(-52%);}
+  .num{color:var(--accent); font-size:158px; line-height:.86;}
+  .title{font-size:84px; line-height:1.12; letter-spacing:.02em; color:var(--ink); margin-top:10px;}
+  .lead{font-size:36px; line-height:1.5; color:var(--ink); margin-top:38px;}
+  ul{list-style:none; margin-top:24px;}
+  li{font-size:31px; line-height:1.7; color:var(--ink); padding-left:34px; position:relative; max-width:840px;}
+  li::before{content:"▪"; color:var(--accent); position:absolute; left:0; top:2px; font-size:22px;}
+  .bottom{position:absolute; bottom:96px; left:90px; right:90px; display:flex; align-items:center; justify-content:space-between;}
+  .foot{color:var(--accent); font-size:27px; letter-spacing:.05em;}
+  .hand-arrow{width:195px; height:64px;}
+/*ALIGNFIX*/h1,h2,.num{margin-left:-0.06em;}</style>
+</head>
+<body>
+  <div class="brand">好好生活</div>
+
+  <div class="main">
+    <div class="num">1</div>
+    <h2 class="title">起床先喝一杯温水</h2>
+    <p class="lead">唤醒身体，比咖啡更早一步。</p>
+    <ul>
+      <li>睡前在床头放好一杯水</li>
+      <li>睁眼第一件事就是它，不用想</li>
+      <li>温的——别用凉水激肠胃</li>
+    </ul>
+  </div>
+
+  <div class="bottom">
+    <div class="foot">好好生活 · 习惯 01 / 06</div>
+    <svg class="hand-arrow" viewBox="0 0 195 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 38 C 44 12, 76 60, 112 32 S 160 20, 180 36" stroke="var(--line)" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M160 18 L182 36 L159 50" stroke="var(--line)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "slug": "vintage-collage",
+  "name": "复古拼贴 · 静默长文",
+  "motif": "编辑杂志 × 复古版画拼贴 × 荧光笔标记 × 纸纹",
+  "mood": ["安静", "艺术", "近黑白", "文学", "高级"],
+  "density": "low",
+  "card_types": ["hook 钩子卡(大引号衬线+版画拼贴+荧光副标)", "longtext 纯长文卡(无衬线短句+大留白+一处强调)"],
+  "fit_modules": ["金句", "钩子", "长文叙述", "观点", "故事"],
+  "fit_topics": ["心理", "情感", "成长", "心灵旷野", "观点长文"],
+  "palette": {
+    "paper": "#F1EEE3",
+    "ink": "#1A1A1A",
+    "lime": "#D8F24A",
+    "muted": "#8A857A"
+  },
+  "fonts": {
+    "headline": "文津宋体 WenJin Mincho (ZeoSeven 376) / 英文 Playfair Display；黑色 + 0.6px 同色描边",
+    "body": "Noto Sans SC 思源黑体 / 英文 Inter"
+  },
+  "signature": ["黑白复古版画拼贴(multiply 混入纸里)", "荧光笔标记(只点1-2词)", "纸纹颗粒底(本套首次用纹理)", "高对比衬线大引号(hook卡)"],
+  "illustration_source": "Heritage Type 免费可商用(但其鸟/花多为彩色,本套要黑白版画→去色或改用 Bewick/Wikimedia 公共领域木刻)；插画用 mix-blend-mode:multiply 让白底消失"
+}

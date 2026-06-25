@@ -1,0 +1,12 @@
+{
+  "slug": "minimal-quiet",
+  "name": "极简性冷淡",
+  "motif": "Minimalism 极简主义",
+  "mood": ["安静", "克制", "高级", "留白"],
+  "density": "low",
+  "fit_modules": ["金句", "概念", "正文", "封底", "图文"],
+  "fit_topics": ["极简生活", "自我", "审美", "慢生活", "心境"],
+  "palette": { "paper": "#FAF8F3", "ink": "#2A2A28", "muted": "#B4AEA2", "accent": "#9A6B4F" },
+  "fonts": { "headline": "思源黑体 Noto Sans SC Light 200-300", "body": "思源黑体 Light / Inter" },
+  "signature": ["极小字号", "细 hairline", "超大留白", "单枚淡褐点/线", "居中"]
+}
