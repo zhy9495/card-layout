@@ -87,9 +87,9 @@ Every style covers: cover · body · concept · data · compare · steps · quot
 
 | | | |
 |:--:|:--:|:--:|
-| ![warm-editorial](skills/card-layout/styles/warm-editorial/sample-cover.png)<br>warm-editorial | ![swiss-grid](skills/card-layout/styles/swiss-grid/sample.png)<br>swiss-grid | ![vintage-collage](skills/card-layout/styles/vintage-collage/sample-hook.png)<br>vintage-collage |
-| ![bauhaus](skills/card-layout/styles/bauhaus/sample.png)<br>bauhaus | ![neo-brutalism](skills/card-layout/styles/neo-brutalism/sample.png)<br>neo-brutalism | ![minimal-quiet](skills/card-layout/styles/minimal-quiet/sample.png)<br>minimal-quiet |
-| ![bold-poster](skills/card-layout/styles/bold-poster/sample.png)<br>bold-poster | ![memphis](skills/card-layout/styles/memphis/sample.png)<br>memphis | ![typewriter-memo](skills/card-layout/styles/typewriter-memo/sample.png)<br>typewriter-memo |
+| ![warm-editorial](skills/card-layout/styles/warm-editorial/sample-en.png)<br>warm-editorial | ![swiss-grid](skills/card-layout/styles/swiss-grid/sample-en.png)<br>swiss-grid | ![vintage-collage](skills/card-layout/styles/vintage-collage/sample-en.png)<br>vintage-collage |
+| ![bauhaus](skills/card-layout/styles/bauhaus/sample-en.png)<br>bauhaus | ![neo-brutalism](skills/card-layout/styles/neo-brutalism/sample-en.png)<br>neo-brutalism | ![minimal-quiet](skills/card-layout/styles/minimal-quiet/sample-en.png)<br>minimal-quiet |
+| ![bold-poster](skills/card-layout/styles/bold-poster/sample-en.png)<br>bold-poster | ![memphis](skills/card-layout/styles/memphis/sample-en.png)<br>memphis | ![typewriter-memo](skills/card-layout/styles/typewriter-memo/sample-en.png)<br>typewriter-memo |
 
 ## Sizes & Platforms
 
