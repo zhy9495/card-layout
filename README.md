@@ -85,11 +85,19 @@ Every style covers: cover · body · concept · data · compare · steps · quot
 
 ## Style Gallery
 
-| | | |
-|:--:|:--:|:--:|
-| ![warm-editorial](skills/card-layout/styles/warm-editorial/sample-en.png)<br>warm-editorial | ![swiss-grid](skills/card-layout/styles/swiss-grid/sample-en.png)<br>swiss-grid | ![vintage-collage](skills/card-layout/styles/vintage-collage/sample-en.png)<br>vintage-collage |
-| ![bauhaus](skills/card-layout/styles/bauhaus/sample-en.png)<br>bauhaus | ![neo-brutalism](skills/card-layout/styles/neo-brutalism/sample-en.png)<br>neo-brutalism | ![minimal-quiet](skills/card-layout/styles/minimal-quiet/sample-en.png)<br>minimal-quiet |
-| ![bold-poster](skills/card-layout/styles/bold-poster/sample-en.png)<br>bold-poster | ![memphis](skills/card-layout/styles/memphis/sample-en.png)<br>memphis | ![typewriter-memo](skills/card-layout/styles/typewriter-memo/sample-en.png)<br>typewriter-memo |
+Each style is shown in both **Chinese (Xiaohongshu)** and **English** — the English version is re-laid out, not just swapped in (longer words, English punctuation, resized to fit).
+
+| Style | 中文 / Chinese | English |
+|:--|:--:|:--:|
+| **warm-editorial** | <img src="skills/card-layout/styles/warm-editorial/sample-cover.png" width="300"> | <img src="skills/card-layout/styles/warm-editorial/sample-en.png" width="300"> |
+| **swiss-grid** | <img src="skills/card-layout/styles/swiss-grid/sample.png" width="300"> | <img src="skills/card-layout/styles/swiss-grid/sample-en.png" width="300"> |
+| **vintage-collage** | <img src="skills/card-layout/styles/vintage-collage/sample-hook.png" width="300"> | <img src="skills/card-layout/styles/vintage-collage/sample-en.png" width="300"> |
+| **bauhaus** | <img src="skills/card-layout/styles/bauhaus/sample.png" width="300"> | <img src="skills/card-layout/styles/bauhaus/sample-en.png" width="300"> |
+| **neo-brutalism** | <img src="skills/card-layout/styles/neo-brutalism/sample.png" width="300"> | <img src="skills/card-layout/styles/neo-brutalism/sample-en.png" width="300"> |
+| **minimal-quiet** | <img src="skills/card-layout/styles/minimal-quiet/sample.png" width="300"> | <img src="skills/card-layout/styles/minimal-quiet/sample-en.png" width="300"> |
+| **bold-poster** | <img src="skills/card-layout/styles/bold-poster/sample.png" width="300"> | <img src="skills/card-layout/styles/bold-poster/sample-en.png" width="300"> |
+| **memphis** | <img src="skills/card-layout/styles/memphis/sample.png" width="300"> | <img src="skills/card-layout/styles/memphis/sample-en.png" width="300"> |
+| **typewriter-memo** | <img src="skills/card-layout/styles/typewriter-memo/sample.png" width="300"> | <img src="skills/card-layout/styles/typewriter-memo/sample-en.png" width="300"> |
 
 ## Sizes & Platforms
 
